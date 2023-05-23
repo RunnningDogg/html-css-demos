@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>侧边栏目录</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .section {
+      height: 100vh;
+      padding: 0 4.8rem;
+    }
+
+    #sidebar {
+      position: fixed;
+      top: 20px;
+      right: 0;
+      /* 调整为适合的位置 */
+      height: 300px;
+      /* 调整为适合的高度 */
+      overflow-y: auto;
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+
+    #sidebar a {
+      display: block;
+      padding: 5px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    #sidebar a.active {
+      color: #777;
+      background-color: wheat;
+    }
+
+    #content {
+      padding: 20px;
+      padding: 0 4.8rem;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    /* 示例用样式，非必需 */
+    h2 {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="sidebar">
+    <a href="#section1">Section 1</a>
+    <a href="#section2">Section 2</a>
+    <a href="#section3">Section 3</a>
+  </div>
+
+  <div id="content">
+    <h1>页面标题</h1>
+    <div class="section" id="section1">
+      <h2>Section 1</h2>
+      <p>在构建一个chatbot后端时,Flask和FastAPI都是不错的选择。我的建议是:
+        如果你更倾向一个成熟稳定的框架,Flask会是更好的选择。它是一个老牌的Python框架,社区资源丰富,易上手。
+        如果你想使用更先进的技术,如ASGI,并且追求更高的性能,FastAPI会更合适。它是一個現代的,快速的(high-performance)Web框架,該框架基於ASGI并完全支持async/await语法。
+        两者的主要差异在于:
+        Flask:
+        - 基于WSGI,单线程
+        - 社区资源最丰富的Python框架之一,易学易用
+        - 支持插件扩展,配套工具齐全
+        FastAPI:
+        - 基于ASGI,支持异步
+        - 性能更高,特别适合I/O密集型应用(如chatbot)
+        - 支持OpenAPI,自动生成API文档
+        - more type hints,利用Python类型提示实现的参数校验
+        所以,我的建议是:
+        如果你最重视项目的稳定和开发效率,Flask会是首选。
+        如果你追求高性能和技术先进性,并且项目复杂度不高,FastAPI会更合适。
+        对于一个chatbot后端来说,这两个框架都可以胜任。我个人会根据团队和项目的情况,在Flask和FastAPI之间做一个权衡。
+        无论选用哪个框架,关键都是要熟练掌握其特点,并写出清晰易扩展的代码。框架只是工具,重要的是如何使用它。
+        希望这个分析可以对你有所帮助。有任何其他问题,欢迎提出。我很乐意继续讨论和帮助你。</p>
+    </div>
+
+    <div class="section" id="section2">
+      <h2>Section 2</h2>
+      <p>在构建一个chatbot后端时,Flask和FastAPI都是不错的选择。我的建议是:
+        如果你更倾向一个成熟稳定的框架,Flask会是更好的选择。它是一个老牌的Python框架,社区资源丰富,易上手。
+        如果你想使用更先进的技术,如ASGI,并且追求更高的性能,FastAPI会更合适。它是一個現代的,快速的(high-performance)Web框架,該框架基於ASGI并完全支持async/await语法。
+        两者的主要差异在于:
+        Flask:
+        - 基于WSGI,单线程
+        - 社区资源最丰富的Python框架之一,易学易用
+        - 支持插件扩展,配套工具齐全
+        FastAPI:
+        - 基于ASGI,支持异步
+        - 性能更高,特别适合I/O密集型应用(如chatbot)
+        - 支持OpenAPI,自动生成API文档
+        - more type hints,利用Python类型提示实现的参数校验
+        所以,我的建议是:
+        如果你最重视项目的稳定和开发效率,Flask会是首选。
+        如果你追求高性能和技术先进性,并且项目复杂度不高,FastAPI会更合适。
+        对于一个chatbot后端来说,这两个框架都可以胜任。我个人会根据团队和项目的情况,在Flask和FastAPI之间做一个权衡。
+        无论选用哪个框架,关键都是要熟练掌握其特点,并写出清晰易扩展的代码。框架只是工具,重要的是如何使用它。
+        希望这个分析可以对你有所帮助。有任何其他问题,欢迎提出。我很乐意继续讨论和帮助你。</p>
+    </div>
+
+    <div class="section" id="section3">
+      <h2>Section 3</h2>
+      <p>在构建一个chatbot后端时,Flask和FastAPI都是不错的选择。我的建议是:
+        如果你更倾向一个成熟稳定的框架,Flask会是更好的选择。它是一个老牌的Python框架,社区资源丰富,易上手。
+        如果你想使用更先进的技术,如ASGI,并且追求更高的性能,FastAPI会更合适。它是一個現代的,快速的(high-performance)Web框架,該框架基於ASGI并完全支持async/await语法。
+        两者的主要差异在于:
+        Flask:
+        - 基于WSGI,单线程
+        - 社区资源最丰富的Python框架之一,易学易用
+        - 支持插件扩展,配套工具齐全
+        FastAPI:
+        - 基于ASGI,支持异步
+        - 性能更高,特别适合I/O密集型应用(如chatbot)
+        - 支持OpenAPI,自动生成API文档
+        - more type hints,利用Python类型提示实现的参数校验
+        所以,我的建议是:
+        如果你最重视项目的稳定和开发效率,Flask会是首选。
+        如果你追求高性能和技术先进性,并且项目复杂度不高,FastAPI会更合适。
+        对于一个chatbot后端来说,这两个框架都可以胜任。我个人会根据团队和项目的情况,在Flask和FastAPI之间做一个权衡。
+        无论选用哪个框架,关键都是要熟练掌握其特点,并写出清晰易扩展的代码。框架只是工具,重要的是如何使用它。
+        希望这个分析可以对你有所帮助。有任何其他问题,欢迎提出。我很乐意继续讨论和帮助你。</p>
+    </div>
+
+  </div>
+
+
+  </div>
+
+  <script>
+    // 滚动事件监听，更新侧边栏目录的高亮状态
+    window.addEventListener('scroll', function () {
+      var sidebarLinks = document.querySelectorAll('#sidebar a');
+
+      sidebarLinks.forEach(function (link) {
+        var sectionId = link.getAttribute('href').substring(1);
+        var section = document.getElementById(sectionId);
+
+        const begin = section.offsetTop - 50
+        const end = section.offsetTop + section.offsetHeight;
+        const bound = window.pageYOffset
+        if (begin <= bound && end > bound) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    });
+
+    // 实现动画效果
+    // 获取所有侧边栏链接
+    var sidebarLinks = document.querySelectorAll('#sidebar a');
+
+    // 为每个链接添加点击事件监听器
+    sidebarLinks.forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        event.preventDefault(); // 阻止默认跳转行为
+
+        // 获取目标页面部分的ID
+        var sectionId = link.getAttribute('href').substring(1);
+
+        // 获取目标页面部分的元素
+        var section = document.getElementById(sectionId);
+        // 平滑滚动到目标位置
+        section.scrollIntoView({ behavior: 'smooth' });
+
+      });
+    });
+
+  </script>
+</body>
+
+</html>
