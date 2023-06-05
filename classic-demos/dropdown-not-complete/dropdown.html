@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <header class=" container main-header">
+    <h1>This is a header</h1>
+  </header>
+
+  <div class="container">
+    <div class="dropdown">
+      <button class="dropdown-trigger">Hover me</button>
+      <div class="dropdown-content">
+        <a href="#">Option 1</a>
+        <a href="#">Option 2</a>
+        <a href="#">Option 3</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const hoverBtn = document.querySelector(".dropdown-trigger")
+    const dropdownContent = document.querySelector('.dropdown-content')
+
+
+    hoverBtn.addEventListener('click', function () {
+      /* 这样不行的 这只是属性 不是设置style  */
+      /* console.log(dropdownContent.getAttribute("display")) */
+
+      /*
+      if (dropdownContent.style.display === 'block') {
+        dropdownContent.style.display = 'none'
+      } else {
+        dropdownContent.style.display = 'block'
+      }
+      */
+      dropdownContent.classList.toggle("dropdown-content--display")
+    })
+
+    dropdownContent.addEventListener("click", function (e) {
+      if (e.target != dropdownContent) {
+        dropdownContent.classList.toggle("dropdown-content--display")
+      }
+    })
+
+    /*
+    hoverBtn.addEventListener('mouseover', function () {
+
+      dropdownContent.classList.add('dropdown-content--display')
+    })
+
+    hoverBtn.addEventListener('mouseout', function () {
+
+      dropdownContent.classList.remove('dropdown-content--display')
+    })
+    */
+
+  </script>
+
+</body>
+
+</html>

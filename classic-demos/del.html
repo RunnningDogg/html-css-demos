@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 48rem;
+      margin: 0 auto;
+      padding: 2.4rem 4.8rem;
+    }
+
+    .section {
+      border: 3px solid rgba(0, 0, 0, 0.5);
+      margin-bottom: 4.8rem;
+      padding: 1.2rem 2.4rem;
+      position: relative;
+    }
+
+    /* 这样实现css选择不了类 所以想换一种方式实现 */
+    /* 
+    .section::after {
+      content: "×";
+      position: absolute;
+      top: 10px;
+      right: 8px;
+    }
+     */
+    .remove-button {
+      position: absolute;
+      font-size: 1.2rem;
+      top: 10px;
+      right: 8px;
+      color: orangered;
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+    }
+  </style>
+  <title>Cross</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <section class="section">
+      <h2>Horse</h2>
+      <p>
+        The horse is one of two extant subspecies of Equus ferus. It is an odd-toed ungulate mammal belonging to the
+        taxonomic family Equidae. The horse has evolved over the past 45 to 55 million years from a small multi-toed
+        creature, Eohippus, into the large, single-toed animal of today.
+      </p>
+      <button class="remove-button">[x]</button>
+    </section>
+    <section class="section">
+      <h2>Donkey</h2>
+      <p>
+        The donkey or ass (Equus africanus asinus) is a domesticated member of the horse family, Equidae. The wild
+        ancestor of the donkey is the African wild ass, E. africanus. The donkey has been used as a working animal for
+        at least 5000 years.
+      </p>
+      <button class="remove-button">[x]</button>
+    </section>
+    <section class="section">
+      <h2>Cat</h2>
+      <p>
+        The domestic cat (Latin: Felis catus) is a small, typically furry, carnivorous mammal. They are often called
+        house cats when kept as indoor pets or simply cats when there is no need to distinguish them from other felids
+        and felines. Cats are often valued by humans for companionship and for their ability to hunt vermin.
+      </p>
+      <button class="remove-button">[x]</button>
+    </section>
+
+  </div>
+
+
+  <script>
+    const rmvBtns = document.querySelectorAll(".remove-button")
+    for (const removeBtn of rmvBtns) {
+      removeBtn.addEventListener("click", function () {
+        console.log(removeBtn.parentElement)
+        removeBtn.parentElement.remove()
+      })
+    }
+  </script>
+
+</body>
+
+</html>

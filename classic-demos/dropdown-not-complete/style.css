@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #777;
+}
+
+.dropdown-trigger {
+  background-color: #bac8ff;
+  border: 1px solid teal;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.dropdown-trigger:hover {
+  background-color: #748ffc;
+}
+
+/* note display不支持transition的值 chatgpt建议利用opacity */
+.dropdown-content {
+  opacity: 0;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 8rem;
+  gap: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.dropdown-content--display {
+  opacity: 1;
+}
